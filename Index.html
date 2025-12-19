@@ -1,0 +1,60 @@
+<!DOCTYPE html>titleleslesml lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>div</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+      header [
+      background-color: #122;
+      color: #ffff;
+      textalign-itens: center;
+      ]
+
+        .container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+  <h1>Otário</h1>
+</header>
+    <div class="container">
+        <img id="imagem" src="https://via.placeholder.com/300" alt="Imagem exemplo">
+        <br>
+        <button onclick="trocarImagem()">Trocar imagem</button>
+    </div>
+
+    <script>
+        function trocarImagem() {
+            const img = document.getElementById("imagem");
+            img.src = "https://picsum.photos/300";
+        }
+    </script>
+
+</body>
+</html>
